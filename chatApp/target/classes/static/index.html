@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Room</title>
+<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+    <script src="/webjars/jquery/jquery.min.js"></script>
+	<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+	<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+	<script src="/script.js"></script>
+</head>
+
+<body class="bg-dark">
+<center>
+<div id="name-form" class="bg-dark d-flex align-items-center container">
+<div class="center">
+<center>
+<h1>Chat Application</h1> <br>
+</center>
+<div class="row">
+                <div classcol-md-4 offset-md-4">
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your name" id="name-value" autofocus >
+                        <div class="input-group-append">
+                            <button class="btn btn-danger" id="login">Enter</button>
+						</div>
+                    </div>
+				</div>
+            </div>
+        </div>
+    </div>
+ <center>
+ 
+ 
+ 
+<div id="chat-room" class="d-none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                   <div class="card mt-3" >
+						<div class="card-header">
+						<h3 id="name-title"></h3>
+						</div>
+
+					<div class="card-body">
+					<div class="input-group">
+                        <input type="text" placeholder="Enter your mwssage" id="message-value" autofocus class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark" id="send-btn">Send</button>
+							<button class="btn btn-dark" id="logout">Logout</button>
+					</div>
+			</div>
+		<div class="table-responsive mt-3">
+
+		<table id="message-container-table">
+
+		</table>
+		</div></div></div>
+	</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
